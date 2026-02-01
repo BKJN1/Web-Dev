@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,42 +13,24 @@
 
   <main class="page" aria-label="Facebook login page">
     <div class="layout">
-      <section class="intro" aria-label="Intro">
+      <div class="intro" aria-label="Intro">
         <h1 class="brand" aria-label="Facebook">facebook</h1>
         <p class="intro__text">
           Facebook helps you connect and share with the people in your life.
         </p>
-      </section>
+      </div>
 
       <section class="auth" aria-label="Login section">
         <div class="auth-card">
           <form class="auth-form" action="#" method="post">
             <div class="form-field">
-              <label class="form-field__label" for="emailOrPhone">
-                Email address or phone number
-              </label>
-              <input
-                class="form-field__input"
-                id="emailOrPhone"
-                name="emailOrPhone"
-                type="text"
-                autocomplete="username"
-                required
-              />
+              <input placeholder="Email address or phone number"class="form-field__input" id="emailOrPhone" name="emailOrPhone" type="text" autocomplete="username"
+                required />
             </div>
 
             <div class="form-field">
-              <label class="form-field__label" for="password">
-                Password
-              </label>
-              <input
-                class="form-field__input"
-                id="password"
-                name="password"
-                type="password"
-                autocomplete="current-password"
-                required
-              />
+              <input placeholder="Password" class="form-field__input" id="password" name="password" type="password"
+                autocomplete="current-password" required />
             </div>
 
             <button class="btn btn--primary" type="submit">Log In</button>
@@ -108,4 +91,5 @@
     </div>
   </footer>
 </body>
+
 </html>
