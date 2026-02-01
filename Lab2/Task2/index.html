@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header" aria-label="Header">
+    <a class="site-header__brand" href="#" aria-label="Instagram home">
+      <img
+        class="site-header__icon"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png"
+        alt="Instagram icon"
+      />
+    </a>
+  </header>
+
+  <main class="page" aria-label="Instagram login page">
+    <section class="promo" aria-label="Promotional section">
+      <h1 class="promo__headline">
+        See everyday moments from your
+        <span class="promo__highlight">close friends.</span>
+      </h1>
+
+      <img
+        class="promo__mockup"
+        src="https://static.cdninstagram.com/rsrc.php/v4/yD/r/nWfBjz-5_uf.png"
+        alt="Phone mockup showing Instagram screenshots"
+      />
+    </section>
+
+    <section class="auth" aria-label="Login section">
+      <div class="auth-card">
+        <img
+          class="auth-card__logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/512px-Instagram_logo.svg.png"
+          alt="Instagram wordmark"
+        />
+
+        <form class="auth-form" action="#" method="post">
+          <div class="form-field">
+            <label class="form-field__label" for="username">
+              Phone number, username, or email
+            </label>
+            <input
+              class="form-field__input"
+              id="username"
+              name="username"
+              type="text"
+              autocomplete="username"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="password">
+              Password
+            </label>
+            <input
+              class="form-field__input"
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <button class="btn btn--primary" type="submit">Log in</button>
+
+          <div class="separator" role="separator" aria-label="Or">
+            <span class="separator__line"></span>
+            <span class="separator__text">OR</span>
+            <span class="separator__line"></span>
+          </div>
+
+          <a class="auth-link auth-link--facebook" href="#">Log in with Facebook</a>
+          <a class="auth-link" href="#">Forgot password?</a>
+        </form>
+      </div>
+
+      <div class="auth-card auth-card--secondary">
+        <p class="auth-card__text">
+          Don't have an account? <a class="auth-link auth-link--signup" href="#">Sign up</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <p class="site-footer__text">© 2026</p>
+  </footer>
+</body>
+</html>

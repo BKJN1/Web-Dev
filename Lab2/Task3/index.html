@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pricing Layout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__left">
+        <a class="topbar__brand" href="#" aria-label="GitHub home">
+          <img
+            class="topbar__logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1280px-Octicons-mark-github.svg.png?20180806170715"
+            alt="GitHub logo"
+            width="30"
+            height="30"
+          />
+        </a>
+
+        <nav class="topbar__nav" aria-label="Primary">
+          <a href="#">Platform</a>
+          <a href="#">Solutions</a>
+          <a href="#">Resources</a>
+          <a href="#">Open Source</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Pricing</a>
+        </nav>
+      </div>
+
+      <div class="topbar__right">
+        <form class="search" role="search" aria-label="Site search" action="#" method="get">
+          <label class="visually-hidden" for="siteSearch">Search</label>
+          <span class="search__icon" aria-hidden="true">🔎</span>
+          <input
+            id="siteSearch"
+            class="search__input"
+            type="search"
+            name="q"
+            placeholder="Search or jump to..."
+          />
+          <span class="search__kbd" aria-hidden="true">/</span>
+        </form>
+
+        <a class="topbar__link" href="#">Sign in</a>
+        <a class="btn btn--ghost btn--small" href="#">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" aria-label="Pricing content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <h1 id="hero-title" class="hero__title">Try the Copilot-powered platform</h1>
+        <p class="hero__desc">
+          We get it, there's a lot you can do with GitHub. That's why we've packed it all into a single
+          risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.
+        </p>
+        <a class="btn btn--primary" href="#">Start free for 30 days</a>
+      </div>
+    </section>
+
+    <section class="pricing" aria-labelledby="pricing-title">
+      <div class="section-head">
+        <h2 id="pricing-title" class="section-title">Choose your plan</h2>
+        <p class="section-subtitle">Simple pricing for individuals and teams.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="card plan" aria-label="Free plan">
+          <div class="plan__top">
+            <h3 class="plan__name">Free</h3>
+            <p class="plan__tagline">The basics for individuals and organizations</p>
+
+            <div class="price" aria-label="Price: 0 dollars per user per month">
+              <span class="price__currency">$</span>
+              <span class="price__value">0</span>
+              <span class="price__suffix">USD</span>
+              <span class="price__per">per user/month</span>
+            </div>
+
+            <a class="btn btn--ghost" href="#">Join for free</a>
+          </div>
+
+          <ul class="list">
+            <li>Unlimited public/private repositories</li>
+            <li>Dependabot security and version updates</li>
+            <li>2,000 CI/CD minutes/month</li>
+            <li>500MB of Packages storage</li>
+            <li>Issues & Projects</li>
+            <li>Community support</li>
+          </ul>
+        </article>
+
+        <article class="card plan" aria-label="Team plan">
+          <div class="plan__top">
+            <h3 class="plan__name">Team</h3>
+            <p class="plan__tagline">Advanced collaboration for individuals and organizations</p>
+
+            <div class="price" aria-label="Price: 4 dollars per user per month">
+              <span class="price__currency">$</span>
+              <span class="price__value">4</span>
+              <span class="price__suffix">USD</span>
+              <span class="price__per">per user/month</span>
+            </div>
+
+            <a class="btn btn--dark" href="#">Continue with Team</a>
+          </div>
+
+          <ul class="list">
+            <li>Everything in Free, plus…</li>
+            <li>Access to GitHub Codespaces</li>
+            <li>Repository rules</li>
+            <li>Multiple reviewers in pull requests</li>
+            <li>Draft pull requests</li>
+            <li>Code owners</li>
+          </ul>
+        </article>
+
+        <article class="card plan plan--featured" aria-label="Enterprise plan">
+          <div class="badge" aria-label="Recommended plan">RECOMMENDED</div>
+
+          <div class="plan__top">
+            <h3 class="plan__name">Enterprise</h3>
+            <p class="plan__tagline">Security, compliance, and flexible deployment</p>
+
+            <div class="price" aria-label="Price: 21 dollars per user per month">
+              <span class="price__currency">$</span>
+              <span class="price__value">21</span>
+              <span class="price__suffix">USD</span>
+              <span class="price__per">per user/month</span>
+            </div>
+
+            <div class="plan__actions">
+              <a class="btn btn--primary" href="#">Start a free trial</a>
+              <a class="btn btn--ghost" href="#">Contact Sales</a>
+            </div>
+          </div>
+
+          <ul class="list">
+            <li>Everything in Team, plus…</li>
+            <li>Data residency</li>
+            <li>Enterprise Managed Users</li>
+            <li>User provisioning through SCIM</li>
+            <li>Audit Log API</li>
+            <li>Advanced auditing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="addons" aria-labelledby="addons-title">
+      <div class="section-head">
+        <h2 id="addons-title" class="section-title">Additional add-ons</h2>
+        <p class="section-subtitle">Boost your workflow with optional products.</p>
+      </div>
+
+      <div class="addons-grid">
+        <article class="card addon">
+          <h3 class="addon__title">Copilot</h3>
+          <p class="addon__desc">AI pair programmer to help you write code faster.</p>
+          <a class="addon__link" href="#">Learn more →</a>
+        </article>
+
+        <article class="card addon">
+          <h3 class="addon__title">Advanced Security</h3>
+          <p class="addon__desc">Security features to find vulnerabilities earlier.</p>
+          <a class="addon__link" href="#">Learn more →</a>
+        </article>
+
+        <article class="card addon">
+          <h3 class="addon__title">Codespaces</h3>
+          <p class="addon__desc">Instant dev environments in the cloud.</p>
+          <a class="addon__link" href="#">Learn more →</a>
+        </article>
+
+        <article class="card addon">
+          <h3 class="addon__title">Actions</h3>
+          <p class="addon__desc">Automate CI/CD and workflows.</p>
+          <a class="addon__link" href="#">Learn more →</a>
+        </article>
+
+        <article class="card addon">
+          <h3 class="addon__title">Packages</h3>
+          <p class="addon__desc">Host packages alongside your code.</p>
+          <a class="addon__link" href="#">Learn more →</a>
+        </article>
+
+        <article class="card addon">
+          <h3 class="addon__title">Support</h3>
+          <p class="addon__desc">Get help for your team with priority support.</p>
+          <a class="addon__link" href="#">Learn more →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
