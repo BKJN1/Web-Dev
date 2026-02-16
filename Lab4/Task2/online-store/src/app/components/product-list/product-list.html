@@ -1,0 +1,10 @@
+<section class="page">
+  <h1 class="title">Online Store</h1>
+
+  <div class="grid">
+    <app-product-card
+      *ngFor="let p of products"
+      [product]="p">
+    </app-product-card>
+  </div>
+</section>

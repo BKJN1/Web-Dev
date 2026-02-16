@@ -35,7 +35,7 @@ const createTodoListItem = (taskText) => {
   });
 
   deleteButton.addEventListener("click", () => {
-    todoList.removeChild(listItem); // removeChild required by task
+    todoList.removeChild(listItem); 
     updateEmptyStateVisibility();
   });
 

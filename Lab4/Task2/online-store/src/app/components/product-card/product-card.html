@@ -1,0 +1,46 @@
+<article class="card">
+    <div class="gallery">
+        <button class="nav left" type="button" (click)="prevImage()" aria-label="Previous image">‹</button>
+
+        <a class="img-wrap" [href]="product.link" target="_blank" rel="noopener">
+            <img [src]="selectedImage" [alt]="product.name" />
+        </a>
+
+        <button class="nav right" type="button" (click)="nextImage()" aria-label="Next image">›</button>
+    </div>
+
+    <div class="thumbs" *ngIf="product.images?.length">
+        <button class="thumb" type="button" *ngFor="let img of product.images; let i = index" (click)="selectImage(i)"
+            [class.active]="i === selectedIndex" aria-label="Select image">
+            <img [src]="img" alt="" />
+        </button>
+    </div>
+    <a class="img-wrap" [href]="product.link" target="_blank" rel="noopener">
+        <img [src]="product.image" [alt]="product.name" />
+    </a>
+
+    <div class="content">
+        <a class="name" [href]="product.link" target="_blank" rel="noopener">
+            {{ product.name }}
+        </a>
+
+        <p class="desc">
+            {{ product.description }}
+        </p>
+
+        <div class="row">
+            <div class="price">{{ product.price | number }} ₸</div>
+
+            <div class="rating" title="Rating">
+                <span class="star" *ngFor="let _ of fullStars">★</span>
+                <span class="star empty" *ngFor="let _ of emptyStars">★</span>
+                <span class="badge">{{ product.rating }}</span>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a class="btn" [href]="whatsappShareLink" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn" [href]="telegramShareLink" target="_blank" rel="noopener">Telegram</a>
+        </div>
+    </div>
+</article>

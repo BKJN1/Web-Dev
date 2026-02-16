@@ -1,0 +1,117 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Product } from '../../models/product.model';
+import { ProductCardComponent } from '../product-card/product-card';
+
+@Component({
+  selector: 'app-product-list',
+  standalone: true,
+  imports: [CommonModule, ProductCardComponent],
+  templateUrl: './product-list.html',
+  styleUrl: './product-list.css',
+})
+export class ProductListComponent {
+  products: Product[] = [
+
+    {
+      id: 1,
+      name: 'Пароочиститель atreon DFHS-01 белый, черный',
+      description: 'Пароочиститель Atreon 3 в 1 — мощная уборка без химии! Универсальный помощник для дома: Пароочиститель.',
+      price: 29900,
+      rating: 5.0,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/pd7/p7b/97012559.jpeg?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p26/pf7/70456234.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pfc/p0c/59895566.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p30/p6e/97012555.jpeg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/paroochistitel-atreon-dfhs-01-belyi-chernyi-142540734/?c=750000000',
+    },
+    {
+      id: 2,
+      name: 'Пылесос AINOMI A1 Premium Power Черный, Мокрый Асфальт',
+      description: 'AINOMI A1 Premium Power — это современный вертикальный беспроводной пылесос с мощностью 400 Вт, созданный для идеальной уборки любых поверхностей. ',
+      price: 79990,
+      rating: 4.7,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p69/pd2/87533453.png?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/pc2/p78/80690959.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p87/p69/62456898.jpeg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pd7/p34/62456899.png?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/ainomi-a1-premium-power-chernyi-mokryi-asfal-t-137712147/?c=750000000',
+    },
+    {
+      id: 3,
+      name: 'Отпариватель MONTERO PRO S200 розовый',
+      description: 'Ищете надежного помощника для быстрой и эффективной глажки одежды? Представляем вам отпариватель MONTERO PRO S200 — идеальный выбор для тех, кто ценит качество и удобство!',
+      price: 45890,
+      rating: 5.0,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/pca/pec/18583732.png?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/pf7/paf/18583733.jpeg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pcb/pb6/18583735.jpeg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p61/pb3/18583734.jpeg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/otparivatel-montero-pro-s200-rozovyi-132998486/?c=750000000',
+    },
+    {
+      id: 4,
+      name: 'Отпариватель AEROLITH Steam Garment Premium белый, бронзовый',
+      description: 'Напольный отпариватель для одежды — мощный помощник для быстрой глажки без утюга! Основные преимущества: Мощность 1800W — быстрый нагрев и интенсивный пар. 10 паровых сопел — равномерная подача пара для идеального разглаживания.',
+      price: 45990 ,
+      rating: 4.0,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p88/p84/84404891.jpeg?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/pdc/pe9/81085669.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p64/pec/81085671.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p1f/p81/84404892.jpeg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/otparivatel-aerolith-steam-garment-premium-belyi-bronzovyi-150458532/?c=750000000',
+    },
+    {
+      id: 5,
+      name: 'Кухонные весы Generic SF-400',
+      description: 'Современные электронные кухонные весы имеют элегантную платформу из пластика. Весы выполнены в белом корпусе. Предел взвешивания 10 кг.',
+      price: 664,
+      rating: 4.4,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h47/ha1/64094073815070.jpg?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/hcf/ha8/64094074798110.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h5a/h8f/64094077124638.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h47/ha1/64094073815070.jpg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/generic-sf-400-102531445/?c=750000000',
+    },
+    {
+      id: 6,
+      name: 'Вакуумный упаковщик YUNTEKO VacuumPro серый',
+      description: 'Пока обычные пакеты предают хруст салата уже на третий день, VacuumPro запечатывает свежесть так надёжно, что холодильник начинает вести себя как мини-банк: всё под контролем, ничего не пропадает.',
+      price: 19888,
+      rating: 4.6,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p37/pe9/64882197.png?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/pac/pa4/60815109.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p35/pa7/60815111.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p18/pa7/60815110.png?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/yunteko-vacuumpro-seryi-141291217/?c=750000000',
+    },
+    {
+      id: 7,
+      name: 'Электрочайник ZY-303 черный, серебристый',
+      description: 'Электрочайник ZY-303 — стильное и функциональное решение для быстрого кипячения воды. Сочетая мощность 1500 Вт и дизайнерский внешний вид, он станет незаменимым помощником на вашей кухне.',
+      price: 2991,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h95/h84/66556923904030.jpg?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/h95/h84/66556923904030.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h95/h84/66556923904030.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/h95/h84/66556923904030.jpg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/elektrochainik-zy-303-chernyi-serebristyi-107912987/?c=750000000',
+    },
+    {
+      id: 8,
+      name: 'Кофемашина HYDEN Aroma рожковая c капучинатором',
+      description: 'Кофемашинас капучинатором HYDEN Aroma — это идеальное сочетание стиля, мощности и функциональности для настоящих ценителей кофе. Оснащённая мощным насосом с давлением 20 бар, она обеспечивает профессиональное качество приготовления напитков, позволяя раскрыть богатый вкус и насыщенный аромат каждого кофейного зерна.',
+      price: 59990,
+      rating: 4.1,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p56/p18/75013249.png?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p5a/p02/67107645.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p76/p02/67107646.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p93/p02/67107647.png?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/kofemashina-hyden-aroma-rozhkovaja-s-kapuchinatorom-146378246/?c=750000000',
+    },
+    {
+      id: 9,
+      name: 'Тепловентилятор Leema TP-001 Issai красный',
+      description: 'Тепловентилятор Leema TP-001 Issai — эффективный и компактный обогреватель, который обеспечит тепло в вашем доме или офисе. С мощностью 2000 Вт и возможностью обогрева площади до 30 м², он станет вашим надёжным помощником в холодное время года.',
+      price: 6959,
+      rating: 4.9,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p04/p61/7343741.png?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p3c/p61/7343743.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p59/p61/7343744.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p75/p61/7343745.png?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/teploventiljator-leema-tp-001-issai-krasnyi-129755125/?c=750000000',
+    },
+    {
+      id: 10,
+      name: 'Увлажнитель воздуха MiBaby Mi001 белый',
+      description: 'Портативный увлажнитель воздуха используют, как аромадиффузор и наслаждаются ароматерапией в квартире или офисе. Бытовая и климатическая техника должна быть у каждого, особенно, когда есть новорожденные дети.',
+      price: 4990,
+      rating: 4.8,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p67/p2d/8582066.jpeg?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p2a/p23/8582069.jpeg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p2a/p23/8582069.jpeg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pbe/p2e/8582072.jpeg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/uvlazhnitel-vozduha-mibaby-mi001-belyi-130030210/?c=750000000',
+    },
+  ];
+}
