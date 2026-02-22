@@ -104,6 +104,11 @@ img {
   font-size: 16px;
 }
 
+.star_green{
+  font-size: 16px;
+  color: green
+}
+
 .star.empty {
   opacity: 0.25;
 }

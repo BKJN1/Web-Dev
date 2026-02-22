@@ -1,0 +1,28 @@
+<div class="layout">
+  <aside class="sidebar">
+    <h2 class="title">Categories</h2>
+
+    <div class="categories">
+      @for (c of categories; track c.id) {
+        <button
+          class="cat-btn"
+          [class.active]="c.id === selectedCategoryId"
+          (click)="selectCategory(c.id)"
+        >
+          {{ c.name }}
+        </button>
+      }
+    </div>
+  </aside>
+
+  <main class="content">
+    @if (!selectedCategoryId) {
+      <div class="welcome">
+        <h1>Online Store</h1>
+        <p>Select a category to view products.</p>
+      </div>
+    } @else {
+      <app-product-list [products]="selectedProducts"></app-product-list>
+    }
+  </main>
+</div>

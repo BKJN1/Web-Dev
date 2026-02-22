@@ -10,6 +10,10 @@ const updateEmptyStateVisibility = () => {
 };
 
 const createTodoListItem = (taskText) => {
+
+  
+
+  
   const listItem = document.createElement("li");
   listItem.classList.add("todo-item");
 
@@ -44,9 +48,18 @@ const createTodoListItem = (taskText) => {
 
   listItem.appendChild(leftWrap);
   listItem.appendChild(deleteButton);
+  
 
   return listItem;
-};
+
+  
+.0/88};
+
+if (isDuplicateTask(taskText)) {
+    alert("This task already exists");
+    return;
+  }
+
 
 const addTaskFromInput = () => {
   const taskText = taskInput.value.trim();

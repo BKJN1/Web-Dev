@@ -1,0 +1,26 @@
+<div class="card">
+  <a class="img-wrap" [href]="product().link" target="_blank" rel="noopener">
+    <img [src]="product().image" [alt]="product().name" />
+  </a>
+
+  <div class="content">
+    <h3 class="name">{{ product().name }}</h3>
+    <p class="desc">{{ product().description }}</p>
+
+    <div class="meta">
+      <div class="rating">
+        @for (_ of fullStars(); track $index) { <span class="star full">★</span> }
+        @for (_ of emptyStars(); track $index) { <span class="star empty">★</span> }
+      </div>
+
+      <div class="likes">❤ {{ product().likes }}</div>
+    </div>
+
+    <div class="actions">
+      <button class="btn" type="button" (click)="like()">Like</button>
+      <button class="btn" type="button" (click)="shareWhatsApp()">WhatsApp</button>
+      <button class="btn" type="button" (click)="shareTelegram()">Telegram</button>
+      <button class="btn danger" type="button" (click)="requestDelete()">Delete</button>
+    </div>
+  </div>
+</div>
