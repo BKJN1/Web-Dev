@@ -1,0 +1,21 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 12px;
+}

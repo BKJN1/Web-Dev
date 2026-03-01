@@ -9,6 +9,7 @@ export class ProductService {
     { id: 2, name: 'Laptops' },
     { id: 3, name: 'Headphones' },
     { id: 4, name: 'Tablets' },
+    { id: 5, name: 'All' },
   ];
 
   private readonly products: Product[] = [
@@ -73,6 +74,8 @@ export class ProductService {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p8e/p63/37727658.jpg?format=gallery-medium',
       images: [],
     },
+    
+    
 
     // Laptops (2)
     {
@@ -258,8 +261,12 @@ export class ProductService {
       link: 'https://kaspi.kz/shop/p/apple-ipad-air-2022-10-9-wi-fi-10-9-djuim-8-gb-256-gb-rozovyi-104235764/',
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hdb/hd5/86369746747422.png?format=gallery-medium',
       images: [],
+
+
+      
     },
   ];
+
 
   getCategories(): Category[] {
     return this.categories.slice();

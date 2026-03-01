@@ -1,0 +1,23 @@
+<h2>Album Details</h2>
+
+<div *ngIf="loading">Loading...</div>
+
+<div *ngIf="!loading && album">
+  <p><b>Id:</b> {{ album.id }}</p>
+  <p><b>UserId:</b> {{ album.userId }}</p>
+
+  <label>
+    <b>Title:</b>
+    <input [(ngModel)]="album.title" />
+  </label>
+
+  <div style="margin-top: 12px;">
+    <button (click)="save()">Save</button>
+    <button style="margin-left: 8px;" (click)="viewPhotos()">View Photos</button>
+    <button style="margin-left: 8px;" (click)="back()">Back</button>
+  </div>
+</div>
+
+<div *ngIf="!loading && !album">
+  Album not found
+</div>
